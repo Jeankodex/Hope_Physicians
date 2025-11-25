@@ -1,0 +1,153 @@
+{% extends "base.html" %}
+{% block content %}
+
+<!-- HERO SECTION -->
+<section class="hero-section" id="hero-section">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+        <h1>World-Class Healthcare at Hope Physicians</h1>
+        <p>Compassionate, expert medical care for the whole family.</p>
+        <a href="#appointment-form" class="hero-btn">Book Appointment</a>
+    </div>
+</section>
+
+<!-- ABOUT / HOME SECTION -->
+<section class="section about" id="home">
+    <div class="container about-grid">
+        <div class="about-text">
+            <h2>About Hope Physicians</h2>
+            <p>
+                Hope Physicians has been providing professional healthcare services 
+                since 1995. Our mission is to deliver top-quality medical care 
+                using advanced technology and a patient-centered approach.
+            </p>
+            <p>
+                We are committed to helping families stay healthy with highly 
+                experienced doctors and state-of-the-art facilities.
+            </p>
+        </div>
+        <div class="about-img">
+            <img src="{{ url_for('static', filename='images/about.jpg') }}" alt="About Hope Physicians">
+        </div>
+    </div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section class="section why" id="resources">
+    <div class="container">
+        <h2>Why Choose Hope Physicians</h2>
+        <div class="why-grid">
+            <div class="why-card">
+                <img src="{{ url_for('static', filename='images/icon1.png') }}">
+                <h3>Experienced Doctors</h3>
+                <p>Highly trained physicians with decades of medical experience.</p>
+            </div>
+            <div class="why-card">
+                <img src="{{ url_for('static', filename='images/icon2.png') }}">
+                <h3>Modern Equipment</h3>
+                <p>Advanced medical tools for accurate diagnosis and treatment.</p>
+            </div>
+            <div class="why-card">
+                <img src="{{ url_for('static', filename='images/icon3.png') }}">
+                <h3>Patient-Centered Care</h3>
+                <p>Your safety and comfort are our top priorities.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SERVICES -->
+<section class="section services" id="services">
+    <div class="container">
+        <h2>Our Medical Services</h2>
+        <div class="service-grid">
+            <div class="service-card">
+                <img src="{{ url_for('static', filename='images/family.jpeg') }}">
+                <h3>Family Medicine</h3>
+            </div>
+            <div class="service-card">
+                <img src="{{ url_for('static', filename='images/pediatrics.jpg') }}">
+                <h3>Pediatrics</h3>
+            </div>
+            <div class="service-card">
+                <img src="{{ url_for('static', filename='images/mens.jpeg') }}">
+                <h3>Men’s Health</h3>
+            </div>
+            <div class="service-card">
+                <img src="{{ url_for('static', filename='images/women.jpeg') }}">
+                <h3>Women’s Health</h3>
+            </div>
+            <div class="service-card">
+                <img src="{{ url_for('static', filename='images/occupational.jpeg') }}">
+                <h3>Occupational Health</h3>
+            </div>
+            <div class="service-card">
+                <img src="{{ url_for('static', filename='images/geriatric.jpeg') }}">
+                <h3>Geriatric Care</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SPECIALIST SECTION / DOCTORS -->
+<section class="section specialist" id="specialist">
+    <div class="container">
+        <h2>Meet Our Specialists</h2>
+        <div class="specialist-card">
+            <img src="{{ url_for('static', filename='images/doctor.webp') }}">
+            <h3>Dr. Okonkwo</h3>
+            <p>Lead Physician — Family Medicine</p>
+            <p>Over 15 years of professional medical expertise.</p>
+        </div>
+    </div>
+</section>
+
+<!-- SUPPORT TEAM -->
+<section class="section support">
+    <div class="container">
+        <h2>Our Support Team</h2>
+        <div class="support-grid">
+            <div class="support-card">
+                <img src="{{ url_for('static', filename='images/support1.jpeg') }}">
+                <h3>Nurses</h3>
+            </div>
+            <div class="support-card">
+                <img src="{{ url_for('static', filename='images/support2.webp') }}">
+                <h3>Lab Technicians</h3>
+            </div>
+            <div class="support-card">
+                <img src="{{ url_for('static', filename='images/support3.jpeg') }}">
+                <h3>Reception Team</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- BOOK APPOINTMENT -->
+<section class="section appointment" id="appointment-form">
+    <div class="container appointment-box">
+        <h2>Book an Appointment</h2>
+        <form action="/submit_appointment" method="POST" class="appointment-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Email Address" required>
+            <input type="text" name="phone" placeholder="Phone Number" required>
+            <select name="department" required>
+                <option value="">Select Department</option>
+                <option>Cardiology</option>
+                <option>Neurology</option>
+                <option>Orthopedics</option>
+                <option>Pediatrics</option>
+            </select>
+            <textarea name="message" placeholder="Additional Message"></textarea>
+            <button type="submit" class="form-btn"  id="submitBtn" >Submit Appointment</button>
+        </form>
+    </div>
+</section>
+
+<!-- FLOATING BUTTON -->
+<a href="#appointment-form" class="floating-btn bounce-btn">
+    <img src="{{ url_for('static', filename='images/appointment-icon.png') }}" alt="">
+    <span>Book Appointment</span>
+</a>
+
+{% endblock %}
