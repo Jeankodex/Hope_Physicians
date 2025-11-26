@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section class="page-hero" style="background-image: url('{{ url_for('static', filename='images/support2.webp') }}');">
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+        <h1>Patient Portal</h1>
+        <p>Secure access to appointments, results, and records.</p>
+    </div>
+</section>
+
+<section class="portal-page section">
+    <div class="container portal-box">
+
+        <h2>Access Your Account</h2>
+        <p>Log in to manage your health information.</p>
+
+        <a class="portal-btn" href="#">Go to Portal</a>
+
+    </div>
+</section>
+
+{% endblock %}

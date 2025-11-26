@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section class="page-hero" style="background-image: url('{{ url_for('static', filename='images/doctor.webp') }}');">
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+        <h1>Meet Our Doctors</h1>
+        <p>Professional. Experienced. Compassionate.</p>
+    </div>
+</section>
+
+<section class="doctors-page section">
+    <div class="container doctor-grid">
+
+        <div class="doctor-card">
+            <img src="{{ url_for('static', filename='images/doctor.webp') }}">
+            <h3>Dr. Okonkwo</h3>
+            <p>Lead Physician — Family Medicine</p>
+            <p>Over 15 years of medical expertise.</p>
+        </div>
+
+        <div class="doctor-card">
+            <img src="{{ url_for('static', filename='images/mens.jpeg') }}">
+            <h3>Dr. Wilson</h3>
+            <p>Cardiologist</p>
+            <p>Heart diagnostics & advanced cardiac care.</p>
+        </div>
+
+        <div class="doctor-card">
+            <img src="{{ url_for('static', filename='images/women.jpeg') }}">
+            <h3>Dr. Aisha</h3>
+            <p>Gynecologist</p>
+            <p>Women's health specialist.</p>
+        </div>
+
+    </div>
+</section>
+
+{% endblock %}

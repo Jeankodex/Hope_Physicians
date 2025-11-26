@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% block content %}
+
+<!-- HERO BANNER -->
+<section class="page-hero" style="background-image: url('{{ url_for('static', filename='images/hero2.jpg') }}');">
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+        <h1>Contact Us</h1>
+        <p>We’re here to assist you with any questions or appointment needs.</p>
+    </div>
+</section>
+
+<section class="section contact-page">
+    <div class="container">
+
+        <h2 class="page-title">Get In Touch</h2>
+        <p class="page-subtitle">Reach us anytime — we’re happy to help!</p>
+
+        <div class="contact-wrapper">
+
+            <!-- Contact Info -->
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+
+                <p><strong>Phone:</strong> +234 900 000 0000</p>
+                <p><strong>Email:</strong> hopephysician90@gmail.com</p>
+                <p><strong>Address:</strong> Hope Physicians Medical Center</p>
+                <p><strong>Hours:</strong> Mon–Sat • 8 AM – 6 PM</p>
+            </div>
+
+            <!-- Contact Form -->
+     <section class="contact-section section">
+    <div class="container">
+
+        <div class="message-card">
+            <h2 class="page-title">Send Us a Message</h2>
+            <p class="page-subtitle">We respond as quickly as possible.</p>
+
+            <form class="contact-form" method="POST" action="/submit_appointment">
+                <input type="text" name="name" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Email Address" required>
+                <input type="text" name="phone" placeholder="Phone Number" required>
+
+                <textarea name="message" placeholder="Your Message..." required></textarea>
+
+                <button type="submit" class="contact-btn">Send Message</button>
+            </form>
+        </div>
+
+    </div>
+</section>
+
+
+{% endblock %}

@@ -530,4 +530,368 @@ body {
         transform: translateY(-10px);
     }
 }
+/* PAGE HERO */
+.page-hero {
+    position: relative;
+    width: 100%;
+    height: 45vh;
+    background-size: cover;
+    background-position: center;
+    border-radius: 0 0 20px 20px;
+    overflow: hidden;
+}
+
+.page-hero-overlay {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(10, 20, 40, 0.55);
+    backdrop-filter: blur(2px);
+}
+
+.page-hero-content {
+    position: relative;
+    text-align: center;
+    top: 55%;
+    transform: translateY(-50%);
+    color: white;
+    padding: 20px;
+}
+
+.page-hero-content h1 {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.page-hero-content p {
+    font-size: 18px;
+    margin-top: 10px;
+    opacity: 0.9;
+}
+
+/* PAGE TITLES */
+.page-title {
+    font-size: 34px;
+    margin-top: 40px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.page-subtitle {
+    text-align: center;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+/* SERVICES PAGE */
+.service-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 25px;
+}
+
+.service-item {
+    background: white;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.service-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 22px rgba(0,0,0,0.12);
+}
+
+.service-item h3 {
+    font-size: 22px;
+    color: #1a3c80;
+}
+
+.service-item p {
+    color: #444;
+    margin-top: 8px;
+}
+
+/* RESOURCES */
+.resource-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 30px;
+}
+
+.resource-card {
+    background: white;
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.resource-card:hover {
+    transform: translateY(-5px);
+}
+
+.resource-card h3 {
+    font-size: 22px;
+    color: #1a3c80;
+}
+
+.resource-card p {
+    color: #555;
+    margin: 10px 0;
+}
+
+.resource-btn {
+    display: inline-block;
+    padding: 10px 18px;
+    background: #1a3c80;
+    color: white;
+    border-radius: 6px;
+    margin-top: 8px;
+    transition: 0.3s;
+}
+
+.resource-btn:hover {
+    background: #0d2960;
+}
+.service-item {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: 0.3s ease;
+    text-align: center;
+}
+
+.service-item:hover {
+    transform: translateY(-5px);
+}
+
+.service-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+/* DOCTOR PAGE */
+.doctor-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.doctor-card {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
+}
+
+.doctor-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+.doctor-card img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 4px solid #e8eefc;
+}
+
+.doctor-card h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #1a3c80;
+    margin-bottom: 5px;
+}
+
+.doctor-card p {
+    color: #555;
+    margin: 5px 0;
+    font-size: 15px;
+}
+/* RESOURCE PAGE */
+.resource-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.resource-card {
+    background: linear-gradient(135deg, #e8f1ff, #fff);
+    border-left: 6px solid #2a6ee8;
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
+}
+
+.resource-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+}
+
+.resource-card h3 {
+    color: #1a3c80;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.resource-card p {
+    color: #444;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+.resource-btn {
+    display: inline-block;
+    background: #2a6ee8;
+    color: #fff;
+    padding: 10px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+
+.resource-btn:hover {
+    background: #1f56b7;
+}
+.department-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.department-card {
+    background: linear-gradient(135deg, #e8f1ff, #ffffff);
+    border-left: 6px solid #2a6ee8;
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
+}
+
+.department-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+}
+
+.department-card h3 {
+    color: #1a3c80;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.department-card p {
+    color: #555;
+    font-size: 15px;
+}
+/* CARD BACKGROUND STYLE */
+.card-form {
+    background: rgba(255, 255, 255, 0.88);  /* soft white glass */
+    backdrop-filter: blur(8px);             /* glass blur effect */
+    border-radius: 18px;
+    padding: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Decorative gradient overlay */
+.card-form::before {
+    content: "";
+    position: absolute;
+    top: -40px;
+    right: -40px;
+    width: 120px;
+    height: 120px;
+    background: rgba(42, 110, 232, 0.25);  /* medical blue tint */
+    border-radius: 50%;
+    filter: blur(30px);
+}
+
+.card-form::after {
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    left: -30px;
+    width: 100px;
+    height: 100px;
+    background: rgba(100, 180, 255, 0.25);
+    border-radius: 50%;
+    filter: blur(25px);
+}
+/* MESSAGE SECTION CARD */
+.message-card {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 40px 35px;
+    border-radius: 20px;
+    max-width: 700px;
+    margin: auto;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+/* Soft medical blue glow */
+.message-card::before {
+    content: "";
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    width: 150px;
+    height: 150px;
+    background: rgba(50, 120, 255, 0.20);
+    border-radius: 50%;
+    filter: blur(40px);
+}
+
+.message-card::after {
+    content: "";
+    position: absolute;
+    bottom: -40px;
+    left: -40px;
+    width: 130px;
+    height: 130px;
+    background: rgba(0, 200, 255, 0.20);
+    border-radius: 50%;
+    filter: blur(35px);
+}
+
+/* Improve form inputs inside the card */
+.message-card input,
+.message-card textarea {
+    background: #f5f7ff;
+    border: 1px solid #ccd8ff;
+    border-radius: 10px;
+}
+
+.message-card .contact-btn {
+    background: #1a3c80;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 10px;
+    width: 100%;
+    transition: .3s;
+}
+
+.message-card .contact-btn:hover {
+    background: #0d2960;
+}
 

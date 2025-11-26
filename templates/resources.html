@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% block content %}
+
+<!-- HERO BANNER -->
+<section class="page-hero" style="background-image: url('{{ url_for('static', filename='images/hero2.jpg') }}');">
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+        <h1>Patient Resources</h1>
+        <p>Your health information, forms, and guides — all in one place.</p>
+    </div>
+</section>
+
+<section class="section resources-page">
+    <div class="container">
+
+        <h2 class="page-title">Helpful Resources</h2>
+        <p class="page-subtitle">Access important documents, healthcare guides, and patient information.</p>
+
+        <div class="resource-grid">
+
+            <div class="resource-card">
+                <h3>Patient Registration Form</h3>
+                <p>Download and complete before your visit to save time.</p>
+                <a href="#" class="resource-btn">Download Form</a>
+            </div>
+
+            <div class="resource-card">
+                <h3>Insurance Information</h3>
+                <p>Learn more about accepted insurance plans and billing options.</p>
+                <a href="#" class="resource-btn">View Insurance Guide</a>
+            </div>
+
+            <div class="resource-card">
+                <h3>Medical Records Request</h3>
+                <p>Securely request your medical records for referrals or personal use.</p>
+                <a href="#" class="resource-btn">Request Records</a>
+            </div>
+
+            <div class="resource-card">
+                <h3>Health Education</h3>
+                <p>Read verified articles crafted to help patients stay healthy.</p>
+                <a href="#" class="resource-btn">Explore Articles</a>
+            </div>
+
+            <div class="resource-card">
+                <h3>Clinic Policies</h3>
+                <p>Review privacy policies, visitation rules, and clinic procedures.</p>
+                <a href="#" class="resource-btn">View Policies</a>
+            </div>
+
+            <div class="resource-card">
+                <h3>Appointment Instructions</h3>
+                <p>Understand what to bring, how to prepare, and expected wait times.</p>
+                <a href="#" class="resource-btn">Read Instructions</a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+{% endblock %}

@@ -27,13 +27,14 @@
         <!-- CENTER: Menu -->
         <nav class="nav-center">
             <ul class="nav-links">
-                <li><a href="#hero-section">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#resources">Resources</a></li>
-                <li><a href="#portal">Portal</a></li>
-                <li><a href="#specialist">Doctors</a></li>
-                <li><a href="#department">Department</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('services') }}">Services</a></li>
+                <li><a href="{{ url_for('resources') }}">Resources</a></li>
+                <li><a href="{{ url_for('portal') }}">Portal</a></li>
+                <li><a href="{{ url_for('doctors') }}">Doctors</a></li>
+                <li><a href="{{ url_for('departments') }}">Departments</a></li>
+                <li><a href="{{ url_for('contact') }}">Contact</a></li>
+
             </ul>
         </nav>
 

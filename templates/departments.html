@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% block content %}
+
+<!-- HERO BANNER -->
+<section class="page-hero" style="background-image: url('{{ url_for('static', filename='images/hero2.jpg') }}');">
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+        <h1>Our Medical Departments</h1>
+        <p>Quality care delivered by experienced specialists across all medical fields.</p>
+    </div>
+</section>
+
+<section class="section department-page">
+    <div class="container">
+
+        <h2 class="page-title">Explore Our Departments</h2>
+        <p class="page-subtitle">We offer a wide range of medical services led by certified professionals.</p>
+
+        <div class="department-grid">
+
+            <div class="department-card">
+                <h3>General Medicine</h3>
+                <p>Comprehensive management of common illnesses and chronic conditions.</p>
+            </div>
+
+            <div class="department-card">
+                <h3>Pediatrics</h3>
+                <p>Dedicated care for infants, children, and adolescents.</p>
+            </div>
+
+            <div class="department-card">
+                <h3>Gynecology</h3>
+                <p>Women's reproductive health, pregnancy care, and wellness checks.</p>
+            </div>
+
+            <div class="department-card">
+                <h3>Cardiology</h3>
+                <p>Advanced diagnosis and treatment of heart and vascular conditions.</p>
+            </div>
+
+            <div class="department-card">
+                <h3>Orthopedics</h3>
+                <p>Specialized care for bones, muscles, joints, and sports injuries.</p>
+            </div>
+
+            <div class="department-card">
+                <h3>Neurology</h3>
+                <p>Treatment of brain, nerve, and spinal disorders.</p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+{% endblock %}

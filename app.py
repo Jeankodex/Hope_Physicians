@@ -21,6 +21,31 @@ mail = Mail(app)
 def home():
     return render_template('index.html')
 
+@app.route('/services')
+def services():
+    return render_template('services.html', title="Services")
+
+@app.route('/resources')
+def resources():
+    return render_template('resources.html', title="Resources")
+
+@app.route('/portal')
+def portal():
+    return render_template('portal.html', title="Portal")
+
+@app.route('/doctors')
+def doctors():
+    return render_template('doctors.html', title="Doctors")
+
+@app.route('/departments')
+def departments():
+    return render_template('departments.html', title="Departments")
+
+@app.route('/contact')
+def contact():
+    return render_template('contact.html', title="Contact")
+
+
 
 @app.route('/submit_appointment', methods=['POST'])
 def submit_appointment():

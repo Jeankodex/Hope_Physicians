@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+{% block content %}
+
+<!-- HERO BANNER -->
+<section class="page-hero" style="background-image: url('{{ url_for('static', filename='images/hero2.jpg') }}');">
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+        <h1>Our Medical Services</h1>
+        <p>World-class healthcare with compassion, precision, and excellence.</p>
+    </div>
+</section>
+
+<section class="section services-page">
+    <div class="container">
+
+        <h2 class="page-title">All Services</h2>
+        <p class="page-subtitle">Explore the complete list of medical services offered at Hope Physicians.</p>
+
+        <div class="service-list">
+
+            <!-- SERVICE ITEM -->
+            <div class="service-item">
+                <img src="{{ url_for('static', filename='images/family.jpeg') }}" class="service-img" alt="Family Medicine">
+                <h3>Family Medicine</h3>
+                <p>Comprehensive primary healthcare for individuals and families.</p>
+            </div>
+
+            <div class="service-item">
+                <img src="{{ url_for('static', filename='images/pediatrics.jpg') }}" class="service-img" alt="Pediatrics">
+                <h3>Pediatrics</h3>
+                <p>Compassionate care for infants, children, and teenagers.</p>
+            </div>
+
+            <div class="service-item">
+                <img src="{{ url_for('static', filename='images/women.jpeg') }}" class="service-img" alt="Women’s Health">
+                <h3>Women’s Health</h3>
+                <p>Full-spectrum gynecological and maternal healthcare.</p>
+            </div>
+
+            <div class="service-item">
+                <img src="{{ url_for('static', filename='images/mens.jpeg') }}" class="service-img" alt="Men’s Health">
+                <h3>Men’s Health</h3>
+                <p>Specialized wellness and preventive healthcare for men.</p>
+            </div>
+
+            <div class="service-item">
+                <img src="{{ url_for('static', filename='images/geriatric.jpeg') }}" class="service-img" alt="Geriatric Care">
+                <h3>Geriatric Care</h3>
+                <p>Expert chronic disease management and senior wellness.</p>
+            </div>
+
+            <div class="service-item">
+                <img src="{{ url_for('static', filename='images/occupational.jpeg') }}" class="service-img" alt="Occupational Health">
+                <h3>Occupational Health</h3>
+                <p>Workplace evaluations, rehabilitation, and medical clearances.</p>
+            </div>
+
+            <div class="service-item">
+                <img src="{{ url_for('static', filename='images/cardiology.jpg') }}" class="service-img" alt="Cardiology">
+                <h3>Cardiology</h3>
+                <p>Diagnosis and treatment of heart-related conditions.</p>
+            </div>
+
+            <div class="service-item">
+                <img src="{{ url_for('static', filename='images/orthopaedic.jpg') }}" class="service-img" alt="Orthopedics">
+                <h3>Orthopedics</h3>
+                <p>Bone and joint care including fractures and arthritis treatment.</p>
+            </div>
+
+            <div class="service-item">
+                <img src="{{ url_for('static', filename='images/neurology.jpg') }}" class="service-img" alt="Neurology">
+                <h3>Neurology</h3>
+                <p>Care for nervous system conditions such as migraines and seizures.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+{% endblock %}
