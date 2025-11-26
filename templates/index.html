@@ -13,21 +13,48 @@
 
 <!-- ABOUT / HOME SECTION -->
 <section class="section about" id="home">
-    <div class="container about-grid">
-        <div class="about-text">
-            <h2>About Hope Physicians</h2>
-            <p>
-                Hope Physicians has been providing professional healthcare services 
-                since 1995. Our mission is to deliver top-quality medical care 
-                using advanced technology and a patient-centered approach.
-            </p>
-            <p>
-                We are committed to helping families stay healthy with highly 
-                experienced doctors and state-of-the-art facilities.
-            </p>
-        </div>
+    <div class="container about-wrapper">
+
+        <!-- LEFT IMAGE -->
         <div class="about-img">
             <img src="{{ url_for('static', filename='images/about.jpg') }}" alt="About Hope Physicians">
+        </div>
+
+        <!-- RIGHT TEXT -->
+        <div class="about-content">
+            <h2 class="section-title">About Hope Physicians</h2>
+
+            <p class="about-intro">
+                Leading the way in medical excellence with cutting-edge technology and compassionate care since 1995.
+            </p>
+
+            <div class="about-features">
+
+                <div class="feature-box">
+                    <span class="feature-icon">🏥</span>
+                    <div>
+                        <h3>State-of-the-Art Facilities</h3>
+                        <p>Equipped with modern medical technology for accurate diagnosis and quality treatment.</p>
+                    </div>
+                </div>
+
+                <div class="feature-box">
+                    <span class="feature-icon">👨‍⚕️</span>
+                    <div>
+                        <h3>Expert Medical Team</h3>
+                        <p>Our board-certified physicians and specialists deliver top-tier healthcare services.</p>
+                    </div>
+                </div>
+
+                <div class="feature-box">
+                    <span class="feature-icon">❤️</span>
+                    <div>
+                        <h3>Patient-Centered Care</h3>
+                        <p>Every patient receives personalized care tailored to their unique medical needs.</p>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </div>
 </section>
@@ -35,114 +62,188 @@
 <!-- WHY CHOOSE US -->
 <section class="section why" id="resources">
     <div class="container">
-        <h2>Why Choose Hope Physicians</h2>
+
+        <h2 class="section-title center">Why Choose Hope Physicians?</h2>
+        <p class="section-subtitle center">
+            Leading the way in medical excellence with cutting-edge technology and compassionate care.
+        </p>
+
         <div class="why-grid">
+
             <div class="why-card">
-                <img src="{{ url_for('static', filename='images/Experienced Doctors.jpg') }}">
-                <h3>Experienced Doctors</h3>
-                <p>Highly trained physicians with decades of medical experience.</p>
+                <div class="why-icon">⏰</div>
+                <h3>24/7 Emergency Care</h3>
+                <p>Continuous emergency services with fast response and dedicated professionals.</p>
             </div>
+
             <div class="why-card">
-                <img src="{{ url_for('static', filename='images/Modern Equipment.jpg') }}">
-                <h3>Modern Equipment</h3>
-                <p>Advanced medical tools for accurate diagnosis and treatment.</p>
+                <div class="why-icon">👨‍⚕️</div>
+                <h3>Expert Doctors</h3>
+                <p>Experienced specialists committed to providing exceptional medical care.</p>
             </div>
+
             <div class="why-card">
-                <img src="{{ url_for('static', filename='images/Patient-Centered Care.jpg') }}">
-                <h3>Patient-Centered Care</h3>
-                <p>Your safety and comfort are our top priorities.</p>
+                <div class="why-icon">⚙️</div>
+                <h3>Advanced Technology</h3>
+                <p>Modern diagnostic tools and equipment for accurate and efficient treatment.</p>
             </div>
+
+            <div class="why-card">
+                <div class="why-icon">❤️</div>
+                <h3>Patient-Centric</h3>
+                <p>Personalized care designed around comfort, wellbeing, and satisfaction.</p>
+            </div>
+
         </div>
     </div>
 </section>
 
-<!-- SERVICES -->
-<section class="section services" id="services">
+
+<section id="services" class="services-section">
     <div class="container">
-        <h2>Our Medical Services</h2>
-        <div class="service-grid">
+        <h2 class="section-title">Our Services</h2>
+        <p class="section-subtitle">Comprehensive healthcare services for you and your family</p>
+
+        <div class="services-grid">
+
+            <!-- SERVICE  -->
             <div class="service-card">
-                <img src="{{ url_for('static', filename='images/family.jpeg') }}">
+                <div class="service-img">
+                    <img src="/static/images/family.jpeg" alt="Family Medicine">
+                </div>
                 <h3>Family Medicine</h3>
+                <p>Comprehensive healthcare services for your entire family with personalized attention.</p>
             </div>
+
+            <!-- SERVICE 2 -->
             <div class="service-card">
-                <img src="{{ url_for('static', filename='images/pediatrics.jpg') }}">
-                <h3>Pediatrics</h3>
+                <div class="service-img">
+                    <img src="/static/images/pediatrics.jpg" alt="Pediatric Care">
+                </div>
+                <h3>Pediatric Care</h3>
+                <p>Specialized healthcare services for children from birth through adolescence.</p>
             </div>
+
+            <!-- SERVICE 3 -->
             <div class="service-card">
-                <img src="{{ url_for('static', filename='images/mens.jpeg') }}">
-                <h3>Men’s Health</h3>
+                <div class="service-img">
+                    <img src="/static/images/mens.jpeg" alt="Men's Health">
+                </div>
+                <h3>Men's Health</h3>
+                <p>Comprehensive healthcare services designed specifically for men's unique health needs.</p>
             </div>
+
+            <!-- SERVICE 4 -->
             <div class="service-card">
-                <img src="{{ url_for('static', filename='images/women.jpeg') }}">
-                <h3>Women’s Health</h3>
+                <div class="service-img">
+                    <img src="/static/images/women.jpeg" alt="Women's Health">
+                </div>
+                <h3>Women's Health</h3>
+                <p>Specialized care focusing on women's unique health needs across all life stages.</p>
             </div>
+
+            <!-- SERVICE 5 -->
             <div class="service-card">
-                <img src="{{ url_for('static', filename='images/occupational.jpeg') }}">
+                <div class="service-img">
+                    <img src="/static/images/occupational.jpeg" alt="Occupational Health">
+                </div>
                 <h3>Occupational Health</h3>
+                <p>Workplace health services focusing on employee wellness and injury prevention.</p>
             </div>
+
+            <!-- SERVICE 6 -->
             <div class="service-card">
-                <img src="{{ url_for('static', filename='images/geriatric.jpeg') }}">
+                <div class="service-img">
+                    <img src="/static/images/geriatric.jpeg" alt="Geriatric Care">
+                </div>
                 <h3>Geriatric Care</h3>
+                <p>Specialized healthcare services tailored to meet the unique needs of older adults.</p>
             </div>
+
         </div>
     </div>
 </section>
 
-<!-- SPECIALIST SECTION / DOCTORS -->
-<section class="section specialist" id="specialist">
-    <div class="container">
-        <h2>Meet Our Specialists</h2>
-        <div class="specialist-card">
-            <img src="{{ url_for('static', filename='images/doctor.webp') }}">
-            <h3>Dr. Okonkwo</h3>
-            <p>Lead Physician — Family Medicine</p>
-            <p>Over 15 years of professional medical expertise.</p>
+
+<section id="specialist" class="specialist-section">
+    <div class="container specialist-container">
+
+        <div class="specialist-info">
+            <h2 class="section-title">Meet Our Specialist</h2>
+
+            <h3 class="doctor-name">Dr. Okonkwo</h3>
+            <p class="doctor-role">Lead Physician – Family Medicine</p>
+            <p class="doctor-qualification">MBBS, MD – Family Medicine | 15+ Years Experience</p>
+
+            <p class="doctor-bio">
+                Dr. Okonkwo is a highly experienced family physician dedicated to providing 
+                comprehensive and compassionate healthcare to patients of all ages. His expertise includes:
+            </p>
+
+            <ul class="doctor-skills">
+                <li>Comprehensive Family Healthcare</li>
+                <li>Preventive Medicine & Wellness</li>
+                <li>Chronic Disease Management</li>
+                <li>Patient Education & Counseling</li>
+            </ul>
+
+            <a href="#appointment-form" class="doctor-btn">Book Appointment</a>
         </div>
+
+        <div class="specialist-image">
+            <img src="{{ url_for('static', filename='images/doctor.webp') }}" alt="Doctor">
+        </div>
+
     </div>
 </section>
 
-<!-- SUPPORT TEAM -->
-<section class="section support">
-    <div class="container">
-        <h2>Our Support Team</h2>
-        <div class="support-grid">
-            <div class="support-card">
-                <img src="{{ url_for('static', filename='images/support1.jpeg') }}">
-                <h3>Nurses</h3>
-            </div>
-            <div class="support-card">
-                <img src="{{ url_for('static', filename='images/support2.webp') }}">
-                <h3>Lab Technicians</h3>
-            </div>
-            <div class="support-card">
-                <img src="{{ url_for('static', filename='images/support3.jpeg') }}">
-                <h3>Reception Team</h3>
-            </div>
-        </div>
-    </div>
-</section>
 
 <!-- BOOK APPOINTMENT -->
 <section class="section appointment" id="appointment-form">
     <div class="container appointment-box">
-        <h2>Book an Appointment</h2>
+        <h2 class="section-title">Book an Appointment</h2>
+
         <form action="/submit_appointment" method="POST" class="appointment-form">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Email Address" required>
-            <input type="text" name="phone" placeholder="Phone Number" required>
-            <select name="department" required>
-                <option value="">Select Department</option>
-                <option>Cardiology</option>
-                <option>Neurology</option>
-                <option>Orthopedics</option>
-                <option>Pediatrics</option>
-            </select>
-            <textarea name="message" placeholder="Additional Message"></textarea>
-            <button type="submit" class="form-btn"  id="submitBtn" >Submit Appointment</button>
+
+            <div class="form-group">
+                <label>Your Name</label>
+                <input type="text" name="name" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="form-group">
+                <label>Email Address</label>
+                <input type="email" name="email" placeholder="example@email.com" required>
+            </div>
+
+            <div class="form-group">
+                <label>Phone Number</label>
+                <input type="text" name="phone" placeholder="e.g. +234 801 234 5678" required>
+            </div>
+
+            <div class="form-group">
+                <label>Select Department</label>
+                <select name="department" required>
+                    <option value="" disabled selected>Choose a department</option>
+                    <option>Cardiology</option>
+                    <option>Neurology</option>
+                    <option>Orthopedics</option>
+                    <option>Pediatrics</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Additional Message (Optional)</label>
+                <textarea name="message" placeholder="Write any details you want us to know..."></textarea>
+            </div>
+
+            <button type="submit" class="form-btn" id="submitBtn">
+                Submit Appointment
+            </button>
         </form>
+
     </div>
 </section>
+
 
 <!-- FLOATING BUTTON -->
 <a href="#appointment-form" class="floating-btn bounce-btn">
